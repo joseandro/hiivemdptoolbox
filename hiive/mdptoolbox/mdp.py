@@ -1116,7 +1116,8 @@ class QLearning(MDP):
 
         # Initialisations
         self.Q = _np.zeros((self.S, self.A))
-
+        self.iter = 0
+        
         self.run_stats = []
         self.error_mean = []
         self.v_mean = []
