@@ -1138,13 +1138,13 @@ class QLearning(MDP):
         self.p_cumulative = []
 
         self.time = _time.time()
-
+        self.iter = 0
         # initial state choice
         s = _np.random.randint(0, self.S)
         reset_s = False
         run_stats = []
         for n in range(1, self.max_iter + 1):
-
+            self.iter += 1
             take_run_stat = n % self.run_stat_frequency == 0 or n == self.max_iter
 
             # Reinitialisation of trajectories every 100 transitions
