@@ -1513,7 +1513,7 @@ class ValueIteration(MDP):
         if self.gamma < 1:
             # compute a bound for the number of iterations and update the
             # stored value of self.max_iter
-            # self._boundIter(epsilon)
+            self._boundIter(epsilon)
             # computation of threshold of variation for V for an epsilon-
             # optimal policy
             self.thresh = epsilon
