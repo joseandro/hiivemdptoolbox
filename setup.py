@@ -3,12 +3,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='mdptoolbox-hiive',
-    version='4.0.3.1',
+    version='4.0.3.2',
     
     author='Andrew Rollings (originally Steven A. W. Cordwell)',
     author_email='a.rollings@hiive.com',
-    url='https://github.com/hiive/hiivemdptoolbox',
-    download_url='https://github.com/hiive/hiivemdptoolbox/archive/4.0.3.1.tar.gz',
     description='Markov Decision Process (MDP) Toolbox',
     long_description='The MDP toolbox provides classes and functions for '
                      'the resolution of discrete-time Markov Decision Processes. The list of '
